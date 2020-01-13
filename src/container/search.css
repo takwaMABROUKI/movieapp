@@ -1,0 +1,21 @@
+#auto-suggest{
+    display:flex;
+margin:20px;
+align-items: center;
+}
+#site-search{
+    width:500px;
+    height:40px;
+}
+.bouton-search{
+    height:40px;
+
+}
+.header{
+    display:flex;
+    align-items: center;
+}
+.star{
+    width:100px;
+    height:50px;
+}

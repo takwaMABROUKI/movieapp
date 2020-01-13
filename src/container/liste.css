@@ -1,0 +1,40 @@
+.liste-film{
+    display:flex;
+    flex-wrap: wrap;
+    
+}
+
+.film{
+    border:solid;
+    position: relative;
+    margin:30px;
+    width:200px;
+    height:400px;
+    background-color:black;
+}
+.film:hover{
+    color: burlywood;
+}
+.film img{
+    width:200px;
+    height:300px;
+}
+.titre{
+    text-align: center;
+    color: blanchedalmond;
+}
+.note{
+    position:absolute;
+    left:0;
+    color:yellow;
+}
+.ratting{
+    
+    color: black;
+    position: absolute;
+    right:0;
+}
+.star{
+    height:30px;
+    
+}

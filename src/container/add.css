@@ -1,0 +1,44 @@
+.box-movie{
+    border: solid;
+    display:flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    
+    border-radius: 5px;
+    position:fixed;
+    z-index: 1;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+    align-items: center;
+    left:0;
+    top:0;
+
+   
+    
+}
+.box-movie imput{
+    margin:20px;
+    width:300px;
+    height:50px;
+}
+#add-movie{
+display: flex;
+flex-direction:column;
+margin:80px;
+height:70px;
+width:400px;
+    
+}
+.box-movie button{
+    width:200px;
+    height:30px;
+    
+    background-color: teal;
+
+}
+input{
+    width:400px;
+    height:80px;
+    margin-bottom: 20px;
+}

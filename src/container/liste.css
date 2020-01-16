@@ -1,6 +1,7 @@
 .liste-film{
     display:flex;
     flex-wrap: wrap;
+    background-color: gray;
     
 }
 

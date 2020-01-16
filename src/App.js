@@ -6,6 +6,7 @@ import Search from './container/search.js'
 import Add from './container/add.js'
 
 
+
 class App extends React.Component{
 
   constructor(){
@@ -26,7 +27,8 @@ class App extends React.Component{
 
      show:false,
      filtre:"",
-     rating:0
+     rating:0,
+     loading: true
      
 
     }
@@ -57,11 +59,14 @@ onStarClick=(nextValue, prevValue, name)=> {
   this.setState({rating: nextValue});
 }
 
+componentDidMount=()=>{
+  setTimeout(()=>{this.setState({loading:false} ) },2000)
+}
   render(){
     return(
   <div className="carte"> 
     <Search Change={this.handelChange} ratting={this.onStarClick} />
-    <Liste movies={this.state} rate={this.state.rating}/>
+    <Liste movies={this.state} rate={this.state.rating} loading={this.state.loading}/>
     <button className="plus" onClick={this.showModal} > + </button>
     <Add add={this.handleAdd} show={this.state.show} hide={this.hideModal}/>
   </div>

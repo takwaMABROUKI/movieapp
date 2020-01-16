@@ -2,9 +2,10 @@ import React from 'react'
 import './liste.css'
 import Ratting from './ratting.js'
 import StarRatingComponent from 'react-star-rating-component';
+import Spinner from '../loading spinner/spinner';
 
 
-export default function Liste(props) {
+ function Liste(props) {
     return (
         <div className="liste-film">
             {props.movies.movieTab.filter(el=>(el.movieName.toUpperCase().includes
@@ -27,3 +28,4 @@ export default function Liste(props) {
         </div>
     )
 }
+export default Spinner(Liste);
